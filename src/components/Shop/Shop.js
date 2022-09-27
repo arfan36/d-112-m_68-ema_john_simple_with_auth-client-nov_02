@@ -17,7 +17,6 @@ const Shop = () => {
         // cart.push(product);
         const newCart = [...cart, product];
         setCart(newCart);
-        console.log(newCart);
     };
 
     return (
