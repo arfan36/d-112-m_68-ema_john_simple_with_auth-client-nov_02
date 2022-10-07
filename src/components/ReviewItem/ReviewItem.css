@@ -4,7 +4,7 @@
     border-radius: 8px;
     padding: 8px;
     width: 571px;
-    margin: 0 auto;
+    margin: 21px auto;
 }
 
 .review-details-container {
@@ -24,6 +24,10 @@
 }
 
 /* Delete icon styles */
+.delete-container{
+    display: flex;
+    align-items: center;
+}
 .btn-delete {
     width: 55px;
     height: 55px;
@@ -32,6 +36,10 @@
     background-color: rgba(235, 87, 87, 0.3);
 }
 
+.btn-delete:hover{
+    background-color: rgba(235, 87, 87, 0.5);
+    cursor: pointer;
+}
 .delete-icon {
     color: rgba(235, 87, 87, 1);
     font-size: 31px;
