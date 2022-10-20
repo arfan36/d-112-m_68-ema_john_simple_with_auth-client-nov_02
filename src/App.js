@@ -29,7 +29,9 @@ function App() {
         },
         {
           path: '/inventory',
-          element: <Inventory></Inventory>
+          element: <PrivetRoute>
+            <Inventory></Inventory>
+          </PrivetRoute>
         },
         {
           path: 'shipping',
