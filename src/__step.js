@@ -16,5 +16,22 @@
 5. export AuthContext to be used inside useContext hook
 6. get form data
 7. getAuth in the UserContext
+ */
 
+/* 
+//! ─── Firebase Hosting ────────────────────────────────────────────────────────
+//^ one time for each computer
+1. npm install -g firebase-tools
+2. firebase login
+
+//^ for each project one time
+3. firebase init
+     Make sure: for public directory: you select: build
+     single page application: y
+     github deploy: n (you can use y)
+
+
+//! ─── For Every Deploy ────────────────────────────────────────────────
+4. npm run build
+5. firebase deploy
  */
