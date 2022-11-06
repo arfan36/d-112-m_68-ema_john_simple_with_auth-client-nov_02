@@ -5,9 +5,17 @@ import Cart from '../Cart/Cart';
 import { addToDb, deleteShoppingCart, getStoredCart } from '../../utilities/fakedb';
 import { Link, useLoaderData } from 'react-router-dom';
 
+/* 
+count : loaded
+per page : 10
+pages : count / perPage
+page
+ */
+
 const Shop = () => {
-    const products = useLoaderData();
+    const { products, count } = useLoaderData();
     const [cart, setCart] = useState([]);
+    const perPage = 10;
 
     const clearCart = () => {
         setCart([]);
