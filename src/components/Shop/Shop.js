@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import { addToDb, deleteShoppingCart, getStoredCart } from '../../utilities/fakedb';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 /* 
 count: loaded
@@ -114,7 +114,7 @@ const Shop = () => {
                 {
                     [...Array(pages).keys()].map(number => <button
                         key={number}
-                        className={page === number && 'selected'}
+                        className={page === number ? 'selected' : ''}
                         onClick={() => setPage(number)}
                     >
                         {number + 1}
@@ -122,7 +122,7 @@ const Shop = () => {
                 }
                 <select onChange={event => setSize(event.target.value)}>
                     <option value={"5"}>5</option>
-                    <option value={"10"} selected>10</option>
+                    <option value={"10"} defaultValue>10</option>
                     <option value={"15"}>15</option>
                     <option value={"20"}>20</option>
                     <option value={"50"}>50</option>
